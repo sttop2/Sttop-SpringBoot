@@ -1,4 +1,4 @@
-package com.top.sttop.controller;
+package com.top.sttop.system.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
