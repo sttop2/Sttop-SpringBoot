@@ -6,46 +6,57 @@ package com.top.sttop.system.pojo;
  */
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.util.Date;
 /**
  * 系统用户实体类
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Table(name = "user")
 public class UserPo {
 
     /**
      * 用户ID
      */
+    @Column(name = "userId")
     private Long userId;
 
     /**
      * 用户名
      */
-    private String username;
+    @Column(name = "userName")
+    private String userName;
 
     /**
      * 密码
      */
-    private String password;
+    @Column(name = "passWord")
+    private String passWord;
 
     /**
      * 昵称
      */
-    private String nickname;
+    @Column(name = "nickName")
+    private String nickName;
 
     /**
      * 生日
      */
+    @Column(name = "birthday")
     private Date birthday;
 
     /**
      * 性别
      */
+    @Column(name = "sex")
     private Integer sex;
 
     /**
      * 是否启用 0:启用 1:禁用
      */
+    @Column(name = "enabled")
     private Integer enabled;
 
     public Long getUserId() {
@@ -56,28 +67,28 @@ public class UserPo {
         this.userId = userId;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassWord() {
+        return passWord;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public Date getBirthday() {
