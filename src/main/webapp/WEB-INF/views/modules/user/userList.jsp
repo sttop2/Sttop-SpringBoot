@@ -13,12 +13,10 @@
         <td>id</td>
         <td>name</td>
     </tr>
-    <c:forEach items="${userList}" var="s" varStatus="st">
         <tr>
-            <td>${s.id}</td>
-            <td>${s.name}</td>
+            <td>${userList.id}</td>
+            <td>${userList.userName}</td>
         </tr>
-    </c:forEach>
 </table>
 </body>
 </html>

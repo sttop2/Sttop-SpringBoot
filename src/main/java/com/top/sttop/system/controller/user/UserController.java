@@ -24,7 +24,7 @@ public class UserController {
     @RequestMapping("/userList")
     public String listUser(Model model){
         List<UserPo> list = userService.findAll();
-        model.addAttribute("userList",list);
+        model.addAttribute("userList",list.get(0));
         return "modules/user/userList";
     }
 }

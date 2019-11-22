@@ -17,11 +17,10 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    UserMapper userMapper;
+    private  UserMapper userMapper;
 
     @Override
     public List<UserPo> findAll() {
         return  userMapper.selectAll();
-//        return userMapper.findAll();
     }
 }
