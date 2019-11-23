@@ -1,7 +1,7 @@
 package com.top.sttop.system.service.impl;
 
 import com.top.sttop.system.mapper.UserMapper;
-import com.top.sttop.system.pojo.UserPo;
+import com.top.sttop.system.pojo.User;
 import com.top.sttop.system.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,10 +17,10 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private  UserMapper userMapper;
+    private UserMapper userMapper;
 
     @Override
-    public List<UserPo> findAll() {
+    public List<User> findAll() {
         return  userMapper.selectAll();
     }
 }

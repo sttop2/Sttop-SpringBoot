@@ -14,8 +14,8 @@
         <td>name</td>
     </tr>
         <tr>
-            <td>${userList.id}</td>
-            <td>${userList.userName}</td>
+            <td>${userList.userid}</td>
+            <td>${userList.username}</td>
         </tr>
 </table>
 </body>

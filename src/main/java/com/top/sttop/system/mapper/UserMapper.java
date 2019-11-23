@@ -1,6 +1,6 @@
 package com.top.sttop.system.mapper;
 
-import com.top.sttop.system.pojo.UserPo;
+import com.top.sttop.system.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -11,8 +11,8 @@ import java.util.List;
  */
 
 @Mapper
-public interface UserMapper extends tk.mybatis.mapper.common.Mapper<UserPo> {
+public interface UserMapper extends tk.mybatis.mapper.common.Mapper<User> {
 
 //    @Select("select * from user")
-    List<UserPo> findAll();
+    List<User> findAll();
 }

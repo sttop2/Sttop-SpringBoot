@@ -1,6 +1,6 @@
 package com.top.sttop.system.service;
 
-import com.top.sttop.system.pojo.UserPo;
+import com.top.sttop.system.pojo.User;
 
 import java.util.List;
 
@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface UserService {
 
-    List<UserPo> findAll();
+    List<User> findAll();
 
 }

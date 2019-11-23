@@ -18,7 +18,7 @@ import java.util.List;
 public class GeneratorUtils {
 
     public static void main(String[] args) throws  Exception {
-        String today = "2019-11-22 ";
+        String today = "2019-11-23 ";
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date now = sdf.parse(today);
