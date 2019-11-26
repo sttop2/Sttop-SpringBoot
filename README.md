@@ -14,7 +14,8 @@
   - Spring Boot：2.2.1.RELEASE
   - ORM框架：MyBatis+通用Mapper
   - Spring Boot官方文档：Spring Boot Reference Guide
-
+  - 前端框架 ： mini-ui
+  
 # 项目配置
   1. banner设置：启动标头 http://patorjk.com/software/taag/
   2. application.properties 设置：https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#appendix
