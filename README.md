@@ -19,6 +19,7 @@
 # 项目配置
   1. banner设置：启动标头 http://patorjk.com/software/taag/
   2. application.properties 设置：https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#appendix
+  3. mini-ui API : http://www.miniui.com/
 # 项目结构划分
   1. common 通用模块   
   2. system 业务模块
