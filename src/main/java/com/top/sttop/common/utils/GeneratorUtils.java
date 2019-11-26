@@ -36,7 +36,7 @@ public class GeneratorUtils {
 
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
-        InputStream is = MyBatisGenerator.class.getClassLoader().getResource("generatorConfig.xml").openStream();
+        InputStream is = MyBatisGenerator.class.getClassLoader().getResource("generator/generatorConfig.xml").openStream();
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(is);
         is.close();

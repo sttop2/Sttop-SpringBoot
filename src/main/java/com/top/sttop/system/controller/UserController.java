@@ -1,4 +1,4 @@
-package com.top.sttop.system.controller.user;
+package com.top.sttop.system.controller;
 
 import com.top.sttop.system.pojo.User;
 import com.top.sttop.system.service.UserService;
