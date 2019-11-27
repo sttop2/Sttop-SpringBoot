@@ -37,7 +37,7 @@ public class Swagger2 implements WebMvcConfigurer {
                 .title("Spring Boot 整合 Swagger2")
                 .description("原文地址链接：http://blog.sttop2.com/springbootswagger2/")
                 .termsOfServiceUrl("http://blog.sttop2.com/")
-                .contact("@sttop2")
+//                .contact("@sttop2")
                 .version("1.0")
                 .build();
     }
