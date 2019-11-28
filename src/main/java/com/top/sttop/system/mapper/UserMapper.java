@@ -1,6 +1,6 @@
 package com.top.sttop.system.mapper;
 
-import com.top.sttop.system.pojo.User;
+import com.top.sttop.system.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

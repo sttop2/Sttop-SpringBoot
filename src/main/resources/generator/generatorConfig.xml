@@ -21,7 +21,7 @@
         </jdbcConnection>
         
         <!-- 生成pojo类映射文件存放位置       -->
-        <javaModelGenerator targetPackage="com.top.sttop.system.pojo" targetProject="src/main/java" />
+        <javaModelGenerator targetPackage="com.top.sttop.system.model" targetProject="src/main/java" />
 
         <!-- 生成对应表及类名       -->
         <table tableName="%">

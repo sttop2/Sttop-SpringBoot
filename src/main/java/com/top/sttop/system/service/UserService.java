@@ -1,6 +1,8 @@
 package com.top.sttop.system.service;
 
-import com.top.sttop.system.pojo.User;
+import com.top.sttop.common.utils.JsonResult;
+import com.top.sttop.system.model.User;
+import com.top.sttop.system.model.vo.UserVo;
 
 import java.util.List;
 
@@ -10,6 +12,10 @@ import java.util.List;
  */
 public interface UserService {
 
-    List<User> findAll();
+    List<User> listUser();
+
+    User selectUserById(Integer id);
+
+    JsonResult<User> userLogin(User user);
 
 }

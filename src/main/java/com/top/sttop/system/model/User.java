@@ -1,28 +1,59 @@
-package com.top.sttop.system.pojo;
+package com.top.sttop.system.model;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
 import java.util.Date;
-
+@Table(name="user")
 public class User {
-    private Integer userid;
 
+    /**
+     *  用户ID
+     */
+    @Column(name="userId")
+    private Integer userId;
+
+    /**
+     *  用户名
+     */
+    @Column(name="userName")
     private String username;
 
+    /**
+     *  用户ID
+     */
+    @Column(name="userId")
     private String password;
 
+    /**
+     *  昵称
+     */
+    @Column(name="nickName")
     private String nickname;
 
+    /**
+     *  性别
+     */
+    @Column(name="sex")
     private Integer sex;
 
+    /**
+     *  生日
+     */
+    @Column(name="birthday")
     private Date birthday;
 
+    /**
+     *  是否启用0：启用；1：禁用
+     */
+    @Column(name="enabled")
     private Integer enabled;
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {

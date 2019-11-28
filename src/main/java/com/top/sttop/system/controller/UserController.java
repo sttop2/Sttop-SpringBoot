@@ -1,6 +1,6 @@
 package com.top.sttop.system.controller;
 
-import com.top.sttop.system.pojo.User;
+import com.top.sttop.system.model.User;
 import com.top.sttop.system.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -36,7 +36,7 @@ public class UserController {
     @ApiOperation(value = "获取用户列表",notes = "")
     @RequestMapping("/userList")
     public String listUser(Model model){
-        List<User> list = userService.findAll();
+        List<User> list = userService.listUser();
         model.addAttribute("userList",list.get(0));
         return "modules/user/userList";
     }
@@ -45,7 +45,7 @@ public class UserController {
     @ApiImplicitParam(name = "user", value = "用户详细实体User", required = true, dataType = "User")
     @RequestMapping(value="", method= RequestMethod.POST)
     public String postUser(@RequestBody User user) {
-        users.put(user.getUserid(), user);
+        users.put(user.getUserId(), user);
         return "success";
     }
 
